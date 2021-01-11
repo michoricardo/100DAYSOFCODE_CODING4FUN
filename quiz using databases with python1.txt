@@ -1,0 +1,14 @@
+CREATE TABLE Ages ( 
+  name VARCHAR(128), 
+  age INTEGER
+)
+DELETE FROM Ages;
+INSERT INTO Ages (name, age) VALUES ('Frank', 15);
+INSERT INTO Ages (name, age) VALUES ('Tatiana', 13);
+INSERT INTO Ages (name, age) VALUES ('Marshall', 17);
+INSERT INTO Ages (name, age) VALUES ('Eliana', 15);
+INSERT INTO Ages (name, age) VALUES ('Lloyd', 15);
+SELECT hex(name || age) AS X FROM Ages ORDER BY X
+
+
+Respuesta: 456C69616E613135
